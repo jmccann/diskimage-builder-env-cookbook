@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7.0
+    driver:
+      customize:
+        cpus: 4
+        memory: 6144
+
+suites:
+  - name: default
+    run_list:
+      - recipe[diskimage-builder-env::default]
+    attributes:

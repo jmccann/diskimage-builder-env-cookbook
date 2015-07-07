@@ -17,7 +17,7 @@ bundle exec kitchen conv
 
 Login:
 ```
-bexec kitchen login
+bundle exec kitchen login
 sudo su -
 ```
 

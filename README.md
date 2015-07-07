@@ -5,6 +5,7 @@ Spin up an environment for building images with [diskimage-builder](https://gith
 ## Supported Platforms
 
 Tested And Validated On
+- CentOS 6.6
 - CentOS 7.0
 
 ## Usage

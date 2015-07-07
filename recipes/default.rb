@@ -9,8 +9,13 @@ include_recipe 'yum-epel'
 include_recipe 'openstack-common::default'
 
 package 'git'
-package 'qemu'
 package 'dib-utils'
+package 'PyYAML'
+
+package 'qemu' unless node['platform_version'].to_i == 6
+
+package 'qemu-img' if node['platform_version'].to_i == 6
+package 'python-argparse' if node['platform_version'].to_i == 6
 
 git '/root/diskimage-builder' do
   repository 'https://github.com/openstack/diskimage-builder.git'

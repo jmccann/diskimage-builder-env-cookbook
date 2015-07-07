@@ -43,5 +43,5 @@ bundle exec rubocop
 Author:: Jacob McCann (<jacob.mccann2@target.com>)
 
 ```text
-Copyright (c) 2015 Jacob McCann, All Rights Reserved.
+Copyright (c) 2015 Jacob McCann, Apache 2.0
 ```

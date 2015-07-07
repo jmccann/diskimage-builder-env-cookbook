@@ -11,11 +11,6 @@ platforms:
       customize:
         cpus: 4
         memory: 6144
-  - name: centos-6.6
-    driver:
-      customize:
-        cpus: 4
-        memory: 6144
 
 suites:
   - name: default

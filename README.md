@@ -5,8 +5,9 @@ Spin up an environment for building images with [diskimage-builder](https://gith
 ## Supported Platforms
 
 Tested And Validated On
-- CentOS 6.6
 - CentOS 7.0
+
+CentOS 6.x fails when attempting to untar base img so it will not be supported.
 
 ## Usage
 Spin up configured VM:

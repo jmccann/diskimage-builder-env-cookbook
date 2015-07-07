@@ -12,10 +12,7 @@ package 'git'
 package 'dib-utils'
 package 'PyYAML'
 
-package 'qemu' unless node['platform_version'].to_i == 6
-
-package 'qemu-img' if node['platform_version'].to_i == 6
-package 'python-argparse' if node['platform_version'].to_i == 6
+package 'qemu'
 
 git '/root/diskimage-builder' do
   repository 'https://github.com/openstack/diskimage-builder.git'

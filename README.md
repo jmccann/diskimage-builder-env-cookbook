@@ -23,8 +23,10 @@ sudo su -
 
 Build an image (rhel7 example):
 ```
-disk-image-create rhel7
+disk-image-create -o ~/cache/rhel7.qcow2 rhel7
 ```
+
+Now on your host system you should find cache/rhel7.qcow2 (relative to this repo's location).
 
 ## Testing
 

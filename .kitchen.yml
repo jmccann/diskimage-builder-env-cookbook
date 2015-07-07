@@ -11,6 +11,8 @@ platforms:
       customize:
         cpus: 4
         memory: 6144
+      synced_folders:
+        - ["cache", "/root/cache", "create: true"]
 
 suites:
   - name: default

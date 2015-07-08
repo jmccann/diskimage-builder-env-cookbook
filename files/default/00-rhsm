@@ -28,6 +28,7 @@ if [ -n "${DIB_RHSM_USER:-}" ] && [ -n "${DIB_RHSM_PASSWORD:-}" ] ; then
     if [[ -n "${DIB_SAT_CERT_RPM_URL:-}" ]]; then
         # yum install -y ${DIB_SAT_CERT_RPM_URL}
         rpm -Uvh ${DIB_SAT_CERT_RPM_URL} # jmccann yum doesn't work with no repos?
+        cp /usr/share/rhn/RHN-ORG-TRUSTED-SSL-CERT /usr/share/rhn/RHNS-CA-CERT # /usr/share/rhn/RHNS-CA-CERT outdated
     fi
     if [[ "${DIB_REG_TYPE:-}" == "rhn" ]]; then
         rhnreg_ks $opts --norhnsd

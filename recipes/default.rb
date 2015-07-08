@@ -23,4 +23,5 @@ end
 cookbook_file '/root/.bash_profile'
 
 # Fix installing DIB_SAT_CERT_RPM_URL ... contrib back
+# 'Update' /usr/share/rhn/RHNS-CA-CERT ... contrib back
 cookbook_file '/root/diskimage-builder/elements/rhel-common/pre-install.d/00-rhsm'

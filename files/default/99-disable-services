@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ "${DIB_DEBUG_TRACE:-1}" -gt 0 ]; then
+    set -x
+fi
+set -eu
+set -o pipefail
+
+if [ $(which chkconfig 2> /dev/null) ]; then
+  if [ $(chkconfig --list | grep -c osad) -gt 0 ]; then
+    chkconfig osad off
+  fi
+  if [ $(chkconfig --list | grep -c rhsmcertd) -gt 0 ]; then
+    chkconfig rhsmcertd off
+  fi
+  if [ $(chkconfig --list | grep -c rhnsd) -gt 0 ]; then
+    chkconfig rhnsd off
+  fi
+fi

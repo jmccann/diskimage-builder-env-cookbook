@@ -37,3 +37,6 @@ end
 
 # Properly detect sysv from upstart as RHEL6 has both installed but uses sysv ... contrib fix
 cookbook_file '/root/diskimage-builder/elements/dib-init-system/dib-init-system'
+
+# Allow dumping a full cloud-init yaml config ... contrib back
+cookbook_file '/root/diskimage-builder/elements/cloud-init-datasources/install.d/05-set-cloud-init-sources'

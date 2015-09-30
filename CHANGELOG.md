@@ -1,3 +1,6 @@
+# 1.2.0
+* Patch cloud-init-datasources to allow specifying any type of cloud-init config
+
 # 1.1.0
 * Hotfix rhel-common element to 'update' /usr/share/rhn/RHNS-CA-CERT
  * This allowed RHEL 6 to work
